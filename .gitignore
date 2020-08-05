@@ -1,0 +1,18 @@
+# Bukkit stuff
+worlds/
+usercache.json
+ops.json
+banned-ips.json
+banned-players.json
+whitelist.json
+
+# Log output
+crash-reports/
+logs/
+*.log
+.console_history
+
+# JAR stuff
+cache/
+tuinity-paperclip.jar
+version_history.json

@@ -1,0 +1,7 @@
+Enabled-Message: '&7Commandspy has been &aenabled&7.'
+Disabled-Message: '&7Commandspy has been &cdisabled&7.'
+Enabled-Message-Others: '&7Commandspy has been &aenabled&7 for &e%player%&7.'
+Disabled-Message-Others: '&7Commandspy has been &cdisabled&7 for &e%player%&7.'
+Chat-Format: '&c%player%&8: &7%message%'
+Ignored-Commands:
+  - '/example'
