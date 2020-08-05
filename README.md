@@ -1,4 +1,7 @@
-# lightspeed
+![Banner](res/lightspeed-banner-1.png)
+
+<h1 align="center">lightspeed</h1>
+<p align="center"><i>Made with :heart: by <a href="https://github.com/Rayzr522">@Rayzr522</a> for <a href="https://rayzr.dev/join">RayzrDev</a></i></p>
 
 > Server files for the LightspeedMC (RayzrDev) Minecraft server
 
