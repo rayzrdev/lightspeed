@@ -18,7 +18,7 @@ If, instead, you want to do your own local setup of this server either for colla
 0. Basic terminal knowledge
 1. Java 8
 2. Git
-3. Tuinity 1.16
+3. Tuinity 1.16 - [instructions for building can be found here](https://github.com/Spottedleaf/Tuinity/tree/ver/1.16)
 
 ```bash
 # clone the repo
