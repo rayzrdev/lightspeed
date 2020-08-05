@@ -1,0 +1,12 @@
+[Unit]
+Description=A service to run the Lightspeed MC server
+
+[Service]
+ExecStart=/home/mc/lightspeed/start.sh
+WorkingDirectory=/home/mc/lightspeed
+Restart=always
+RestartSec=3
+User=mc
+
+[Install]
+WantedBy=default.target
