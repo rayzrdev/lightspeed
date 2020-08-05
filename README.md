@@ -32,5 +32,9 @@ cp path/to/tuinity-paperclip.jar .
 
 From there, feel free to tweak things to your liking! Any PRs are greatly appreciated, with the limitation that premium plugins cannot be included (for legal reasons), and also that you please do your best to `.gitignore` any files which are more just storage and less config, such as playerdata or world files.
 
+## Legal Disclaimer
+
+I don't in any way claim rights to any of the plugin JAR files in the `plugins` folder. If any plugin dev finds this and has a problem with me including their (probably now outdated) JAR in this repo, feel free to open an issue and I'll happily remove it. I'm not looking for any legal trouble, I just want VCS on my Minecraft server :D
+
 ## Join Me
 [![Discord Badge](https://github.com/Rayzr522/ProjectResources/raw/master/RayzrDev/badge-small.png)](https://rayzr.dev/join)
