@@ -14,5 +14,5 @@ logs/
 
 # JAR stuff
 cache/
-tuinity-paperclip.jar
+/*.jar
 version_history.json

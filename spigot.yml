@@ -169,3 +169,5 @@ world-settings:
     max-entity-collisions: 8
   worldeditregentempworld:
     verbose: false
+players:
+  disable-saving: false

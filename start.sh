@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JARFILE=tuinity-paperclip.jar
+JARFILE=server.jar
 MAX_MEM=3G
 INIT_MEM=2G
 
