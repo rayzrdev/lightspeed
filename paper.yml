@@ -10,9 +10,12 @@
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
+use-display-name-in-quit-message: false
 verbose: false
-config-version: 20
+config-version: 21
 settings:
+  log-named-entity-deaths: true
+  fix-entity-position-desync: true
   track-plugin-scoreboards: false
   max-joins-per-tick: 3
   player-auto-save-rate: -1
@@ -37,6 +40,8 @@ settings:
     early-warning-every: 5000
     early-warning-delay: 10000
   spam-limiter:
+    recipe-spam-increment: 1
+    recipe-spam-limit: 20
     tab-spam-increment: 1
     tab-spam-limit: 500
   book-size:
@@ -57,6 +62,20 @@ settings:
       other items
     allow-headless-pistons-readme: This setting controls if players should be able
       to create headless pistons.
+  use-display-name-in-quit-message: false
+  console:
+    enable-brigadier-highlighting: true
+    enable-brigadier-completions: true
+  loggers:
+    deobfuscate-stacktraces: true
+  item-validation:
+    display-name: 8192
+    loc-name: 8192
+    lore-line: 8192
+    book:
+      title: 8192
+      author: 8192
+      page: 16384
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
@@ -66,17 +85,34 @@ messages:
     flying-player: Flying is not enabled on this server
     flying-vehicle: Flying is not enabled on this server
 timings:
+  url: https://timings.aikar.co/
   enabled: true
   verbose: true
   server-name-privacy: false
   hidden-config-entries:
   - database
   - settings.bungeecord-addresses
+  - settings.velocity-support.secret
   history-interval: 300
   history-length: 3600
   server-name: Unknown Server
 world-settings:
   default:
+    piglins-guard-chests: true
+    seed-based-feature-search-loads-chunks: true
+    fix-wither-targeting-bug: false
+    allow-using-signs-inside-spawn-protection: false
+    map-item-frame-cursor-limit: 128
+    fix-items-merging-through-walls: false
+    show-sign-click-command-failure-msgs-to-player: false
+    allow-player-cramming-damage: false
+    ender-dragons-death-always-places-dragon-egg: false
+    update-pathfinding-on-block-update: true
+    only-players-collide: false
+    allow-vehicle-collisions: true
+    portal-search-vanilla-dimension-scaling: true
+    fix-climbing-bypassing-cramming-rule: false
+    max-leash-distance: 10.0
     should-remove-dragon: false
     zombies-target-turtle-eggs: true
     phantoms-do-not-spawn-on-creative-players: true
@@ -137,6 +173,8 @@ world-settings:
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 1
     game-mechanics:
+      fix-curing-zombie-villager-discount-exploit: true
+      disable-mob-spawner-spawn-egg-transformation: false
       nerf-pigmen-from-nether-portals: false
       disable-pillager-patrols: false
       disable-relative-projectile-velocity: false
@@ -158,6 +196,9 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
+      bamboo:
+        max: 16
+        min: 11
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 600
@@ -186,6 +227,8 @@ world-settings:
     squid-spawn-height:
       maximum: 0.0
     anti-xray:
+      max-block-height: 64
+      use-permission: false
       lava-obscures: false
       enabled: false
       engine-mode: 1
@@ -223,3 +266,40 @@ world-settings:
       spawn-chance-failure-increment: 25
       spawn-chance-min: 25
       spawn-chance-max: 75
+    entity-per-chunk-save-limit:
+      fireball: -1
+      small_fireball: -1
+      experience_orb: -1
+      snowball: -1
+      ender_pearl: -1
+      arrow: -1
+    mobs-can-always-pick-up-loot:
+      zombies: false
+      skeletons: false
+    door-breaking-difficulty:
+      zombie:
+      - HARD
+      vindicator:
+      - NORMAL
+      - HARD
+    mob-effects:
+      undead-immune-to-certain-effects: true
+      spiders-immune-to-poison-effect: true
+      immune-to-wither-effect:
+        wither: true
+        wither-skeleton: true
+    spawn-limits:
+      monsters: -1
+      animals: -1
+      water-animals: -1
+      water-ambient: -1
+      ambient: -1
+    unsupported-settings:
+      fix-invulnerable-end-crystal-exploit: true
+    tick-rates:
+      sensor:
+        villager:
+          secondarypoisensor: 40
+      behavior:
+        villager:
+          validatenearbypoi: -1

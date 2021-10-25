@@ -2,4 +2,4 @@ discord-console-logs/
 linkedaccounts.json
 
 # Sadly we have to ignore this since the token is here :(
-config.yml
+config.yml*
